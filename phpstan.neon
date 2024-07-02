@@ -1,0 +1,13 @@
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+    level: max
+    paths:
+        - app
+        - routes
+    ignoreErrors:
+        - '#Call to an undefined method Illuminate\\[a-zA-Z]+\\[a-zA-Z]+::[a-zA-Z]+\\(.*\\)#'
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    checkExplicitMixed: false
